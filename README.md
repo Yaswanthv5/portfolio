@@ -1,7 +1,7 @@
 <div align="center">
     <a href="(https://portfoliovercel-omega.vercel.app/)"><h1 align="center">Varikuti Yaswanthreddy</h1></a>
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/). 
 
 </div>
 
@@ -13,10 +13,6 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 ## Running Locally
 
 
-```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
-```
 
 
 Then install dependencies and run the development server:
