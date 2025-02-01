@@ -1,4 +1,4 @@
-import Link from "next/link";
+/* import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
@@ -136,3 +136,4 @@ export default async function ProjectsPage() {
     </div>
   );
 }
+*/
