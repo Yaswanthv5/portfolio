@@ -61,10 +61,13 @@ export default function ExperienceTimeline() {
     return (
         <div className="flex flex-col items-center py-10 bg-zinc-900 text-white">
             <Navigation />
-            <h1 className="text-3xl font-bold mb-8">Experience Timeline</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center text-yellow-400">Experience Timeline</h1>
             <div className="relative w-full max-w-4xl">
+                {/* Vertical Line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
+
                 {updatedExperiences.map((exp, index) => (
-                    <div key={index} className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"} mb-8`}>
+                    <div key={index} className={`flex w-full mb-8 ${index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"}`}>
                         <div className="bg-zinc-800 p-6 rounded-lg shadow-lg w-5/12 relative">
                             <FaBuilding className="text-yellow-400 mb-2" />
                             <h2 className="text-xl font-semibold">{exp.company}</h2>
@@ -76,11 +79,11 @@ export default function ExperienceTimeline() {
                                     <li key={i}>{achieve}</li>
                                 ))}
                             </ul>
-                            <div className="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900"></div>
+                            {/* Timeline Dot */}
+                            <div className="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900 left-full -ml-2"></div>
                         </div>
                     </div>
                 ))}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
             </div>
         </div>
     );
