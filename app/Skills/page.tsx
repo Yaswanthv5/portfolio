@@ -50,9 +50,9 @@ export default function Example() {
             <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Skills</h1>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-6 sm:grid-cols-3 lg:gap-16">
-					{skills.map((s) => (
+					{skills.map((s, index) => (
 						<Card>
-								<div className="z-10 flex flex-col items-center">
+								<div key= {index} className="z-10 flex flex-col items-center justify-center p-6 space-y-4 text-center">
 									<span className="lg:text-l text-center font-medium duration-150 xl:text-2xl text-zinc-200 group-hover:text-white font-display">
 										{s.handle}
 									</span>
