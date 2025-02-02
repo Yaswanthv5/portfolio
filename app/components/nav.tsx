@@ -46,6 +46,12 @@ export const Navigation: React.FC = () => {
 						>
 							Skills
 						</Link>
+						<Link
+							href="/certifications"
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+						>
+							Certifications
+						</Link>
 					</div>
 
 					<Link
