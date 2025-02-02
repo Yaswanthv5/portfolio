@@ -5,10 +5,10 @@ import { FaDownload } from "react-icons/fa";
 
 export default function ResumeDownload() {
     const handleDownload = () => {
-        const resumePath = "/resume.pdf"; // Update this with the actual resume file path
+        const resumePath = "/yaswanthreddyvarikuti.pdf"; // Update this with the actual resume file path
         const link = document.createElement("a");
         link.href = resumePath;
-        link.download = "Yaswanth_Reddy_Resume.pdf";
+        link.download = "YaswanthReddy_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
