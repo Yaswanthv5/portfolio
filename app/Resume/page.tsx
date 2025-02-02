@@ -6,7 +6,7 @@ import { Navigation } from "../components/nav";
 
 export default function ResumeDownload() {
     const handleDownload = () => {
-        const resumePath = "public/yaswanthreddyvarikuti.pdf"; // Update this with the actual resume file path
+        const resumePath = "/yaswanthreddyvarikuti.pdf"; // Update this with the actual resume file path
         const link = document.createElement("a");
         link.href = resumePath;
         link.download = "yaswanthreddyvarikuti.pdf";
@@ -20,7 +20,7 @@ export default function ResumeDownload() {
             <Navigation />
             <button
                 onClick={handleDownload}
-                className="flex items-center gap-2 px-6 py-3 mt-12 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 mt-8 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
             >
                 <FaDownload />
                 Resume
