@@ -45,7 +45,7 @@ const skills = [
 
 export default function Example() {
 	return (
-		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+		<div className=" flex flex-col items-center py-10 bg-zinc-900 text-white">
 			<Navigation />
             <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Skills</h1>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
@@ -62,7 +62,7 @@ export default function Example() {
 									<span className="lg:text-xl font-medium duration-150 xl:text-2xl text-zinc-200 group-hover:text-white font-display">
 										{s.handle}
 									</span>
-									<span className="mt-4 text-sm text-start duration-1000 text-zinc-400 group-hover:text-zinc-200">
+									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
 										{s.label}
 									</span>
 								</div>
