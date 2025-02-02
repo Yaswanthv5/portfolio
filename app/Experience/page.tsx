@@ -17,7 +17,7 @@ const experiences = [
     }
 ];
 
-const calculateExperience = (startDate, endDate = new Date()) => {
+const calculateExperience = (startDate: Date, endDate: Date = new Date()) => {
     const diffInMonths =
         (endDate.getFullYear() - startDate.getFullYear()) * 12 +
         endDate.getMonth() -
@@ -27,7 +27,7 @@ const calculateExperience = (startDate, endDate = new Date()) => {
     return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""}`;
 };
 
-const calculateYearsDifference = (startDate, endDate) => {
+const calculateYearsDifference = (startDate: Date, endDate: Date) => {
     const years = endDate.getFullYear() - startDate.getFullYear();
     return `${years} year${years !== 1 ? "s" : ""}`;
 };
