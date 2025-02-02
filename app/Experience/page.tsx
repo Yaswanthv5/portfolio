@@ -6,39 +6,45 @@ import { Navigation } from "../components/nav";
 
 type Experience = {
     company: string;
-    Role: string;
+    role: string;
     startDate: Date;
     endDate?: Date;
     duration?: string;
+    description: string;
+    achievements: string[];
 };
 
 const experiences: Experience[] = [
     {
         company: "Cognizant Technologies",
-        Role: "Data And AI Engineer",
-        startDate: new Date("2023-06-22"), // June 2023
+        role: "Data And AI Engineer",
+        startDate: new Date("2023-06-22"),
+        description: "Developing AI-driven solutions for enterprise data pipelines.",
+        achievements: [
+            "Optimized data processing time by 30% using GCP BigQuery.",
+            "Implemented machine learning models for predictive analytics.",
+        ],
     },
     {
         company: "Cognizant Technologies",
-        Role: "GCP Data Engineer Intern",
+        role: "GCP Data Engineer Intern",
         startDate: new Date("2022-12-01"),
         endDate: new Date("2023-06-21"),
+        description: "Worked on GCP-based data warehousing and ETL solutions.",
+        achievements: [
+            "Built scalable ETL pipelines using Google Cloud Dataflow.",
+            "Improved data ingestion performance by 40% with Apache Beam.",
+        ],
     }
 ];
 
 const calculateExperience = (startDate: Date, endDate: Date = new Date()): string => {
     const diffInMonths =
         (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-        endDate.getMonth() -
-        startDate.getMonth();
+        endDate.getMonth() - startDate.getMonth();
     const years = Math.floor(diffInMonths / 12);
     const months = diffInMonths % 12;
     return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""}`;
-};
-
-const calculateYearsDifference = (startDate: Date, endDate: Date): string => {
-    const years = endDate.getFullYear() - startDate.getFullYear();
-    return `${years} year${years !== 1 ? "s" : ""}`;
 };
 
 export default function ExperienceTimeline() {
@@ -47,9 +53,7 @@ export default function ExperienceTimeline() {
     useEffect(() => {
         const updatedExp = experiences.map((exp) => ({
             ...exp,
-            duration: exp.endDate
-                ? calculateYearsDifference(exp.startDate, exp.endDate)
-                : calculateExperience(exp.startDate)
+            duration: calculateExperience(exp.startDate, exp.endDate)
         }));
         setUpdatedExperiences(updatedExp);
     }, []);
@@ -58,14 +62,25 @@ export default function ExperienceTimeline() {
         <div className="flex flex-col items-center py-10 bg-zinc-900 text-white">
             <Navigation />
             <h1 className="text-3xl font-bold mb-8">Experience Timeline</h1>
-            <div className="relative border-l-2 border-zinc-500 pl-6">
+            <div className="relative w-full max-w-4xl">
                 {updatedExperiences.map((exp, index) => (
-                    <div key={index} className="mb-4">
-                        <FaBuilding className="inline-block mr-2" />
-                        <span>{exp.company}: {exp.Role}</span>
-                        <span className="ml-2">({exp.duration})</span>
+                    <div key={index} className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"} mb-8`}>
+                        <div className="bg-zinc-800 p-6 rounded-lg shadow-lg w-5/12 relative">
+                            <FaBuilding className="text-yellow-400 mb-2" />
+                            <h2 className="text-xl font-semibold">{exp.company}</h2>
+                            <h3 className="text-lg text-gray-300">{exp.role}</h3>
+                            <p className="text-sm text-gray-400">{exp.duration}</p>
+                            <p className="mt-2 text-sm">{exp.description}</p>
+                            <ul className="mt-2 text-sm list-disc list-inside text-gray-300">
+                                {exp.achievements.map((achieve, i) => (
+                                    <li key={i}>{achieve}</li>
+                                ))}
+                            </ul>
+                            <div className="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900"></div>
+                        </div>
                     </div>
                 ))}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
             </div>
         </div>
     );
