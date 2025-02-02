@@ -64,7 +64,7 @@ export default function ExperienceTimeline() {
             <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Experience</h1>
             <div className="relative w-full max-w-4xl">
                 {/* Vertical Line */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white-400 h-full"></div>
 
                 {updatedExperiences.map((exp, index) => (
                     <div key={index} className={`flex w-full mb-8 ${index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"}`}>
@@ -80,7 +80,7 @@ export default function ExperienceTimeline() {
                                 ))}
                             </ul>
                             {/* Timeline Dot */}
-                            <div className="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900 left-full -ml-2"></div>
+                            <div className={`absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900 ${index % 2 === 0 ? "left-full -ml-2" : "right-full -mr-2"}`}></div>
                         </div>
                     </div>
                 ))}
