@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, LinkedIn } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -16,6 +16,12 @@ const socials = [
 		href: "https://github.com/Yaswanthv5",
 		label: "Github",
 		handle: "yaswanthreddyvarikuti",
+	},
+	{
+		icon: <LinkedIn size={20} />,
+		href: "https://www.linkedin.com/in/varikuti-yaswanthreddy/",
+		label: "LinkedIn",
+		handle: "Yaswanthreddy Variktui",
 	},
 ];
 
