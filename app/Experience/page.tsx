@@ -61,7 +61,7 @@ export default function ExperienceTimeline() {
     return (
         <div className="flex flex-col items-center py-10 bg-zinc-900 text-white">
             <Navigation />
-            <h1 className="text-4xl font-bold mb-8 text-center text-white-400">Experience</h1>
+            <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Experience</h1>
             <div className="relative w-full max-w-4xl">
                 {/* Vertical Line */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
