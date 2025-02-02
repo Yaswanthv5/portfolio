@@ -23,6 +23,12 @@ const experiences: Experience[] = [
         achievements: [
             "Optimized data processing time by 30% using GCP BigQuery.",
             "Implemented machine learning models for predictive analytics.",
+            "Increased the productivity of the project by 70% through automating various routine works.",
+            "Created various tools using python and machine learning to reduce and automate the human efforts and increase the productivity alround upto 80%.",
+            "Build complete automation tools for the project to reduce the human efforts and increase the productivity upto 90%.",
+            "Supported the team in building a complete automated data pipeline using GCP services.",
+            "Given trainings to the team on using automated tools and machine learning models.",
+            "Suggest an idea to the top leads on bulding a complete automated tool using snowflake and Edge computing. which would increase the productivity of the project by 10 times.",
         ],
     },
     {
@@ -34,6 +40,8 @@ const experiences: Experience[] = [
         achievements: [
             "Built scalable ETL pipelines using Google Cloud Dataflow.",
             "Improved data ingestion performance by 40% with Apache Beam.",
+            "Built an complete automated data pipeline using GCP services which increased the productivity of the project by 60%.",
+            "built a hospital database using GCP services and implemented machine learning models to predict the disease and the treatment for the disease.",
         ],
     }
 ];
