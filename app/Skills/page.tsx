@@ -49,7 +49,7 @@ export default function Example() {
 			<Navigation />
             <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Skills</h1>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-6 sm:grid-cols-3 lg:gap-16">
 					{skills.map((s) => (
 						<Card>
 								<div className="z-10 flex flex-col items-center">
