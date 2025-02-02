@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaBuilding } from "react-icons/fa";
+import { Navigation } from "../components/nav";
 
 type Experience = {
     company: string;
@@ -55,12 +56,13 @@ export default function ExperienceTimeline() {
 
     return (
         <div className="flex flex-col items-center py-10 bg-zinc-900 text-white">
+            <Navigation />
             <h1 className="text-3xl font-bold mb-8">Experience Timeline</h1>
             <div className="relative border-l-2 border-zinc-500 pl-6">
                 {updatedExperiences.map((exp, index) => (
                     <div key={index} className="mb-4">
                         <FaBuilding className="inline-block mr-2" />
-                        <span>{exp.company}:{exp.Role}</span>
+                        <span>{exp.company}: {exp.Role}</span>
                         <span className="ml-2">({exp.duration})</span>
                     </div>
                 ))}
