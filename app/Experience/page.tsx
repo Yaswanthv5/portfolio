@@ -3,7 +3,15 @@
 import React, { useState, useEffect } from "react";
 import { FaBuilding } from "react-icons/fa";
 
-const experiences = [
+type Experience = {
+    company: string;
+    Role: string;
+    startDate: Date;
+    endDate?: Date;
+    duration?: string;
+};
+
+const experiences: Experience[] = [
     {
         company: "Cognizant Technologies",
         Role: "Data And AI Engineer",
@@ -17,7 +25,7 @@ const experiences = [
     }
 ];
 
-const calculateExperience = (startDate: Date, endDate: Date = new Date()) => {
+const calculateExperience = (startDate: Date, endDate: Date = new Date()): string => {
     const diffInMonths =
         (endDate.getFullYear() - startDate.getFullYear()) * 12 +
         endDate.getMonth() -
@@ -27,18 +35,20 @@ const calculateExperience = (startDate: Date, endDate: Date = new Date()) => {
     return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""}`;
 };
 
-const calculateYearsDifference = (startDate: Date, endDate: Date) => {
+const calculateYearsDifference = (startDate: Date, endDate: Date): string => {
     const years = endDate.getFullYear() - startDate.getFullYear();
     return `${years} year${years !== 1 ? "s" : ""}`;
 };
 
 export default function ExperienceTimeline() {
-    const [updatedExperiences, setUpdatedExperiences] = useState([]);
+    const [updatedExperiences, setUpdatedExperiences] = useState<Experience[]>([]);
 
     useEffect(() => {
         const updatedExp = experiences.map((exp) => ({
             ...exp,
-            duration: calculateExperience(exp.startDate)
+            duration: exp.endDate
+                ? calculateYearsDifference(exp.startDate, exp.endDate)
+                : calculateExperience(exp.startDate)
         }));
         setUpdatedExperiences(updatedExp);
     }, []);
@@ -48,14 +58,10 @@ export default function ExperienceTimeline() {
             <h1 className="text-3xl font-bold mb-8">Experience Timeline</h1>
             <div className="relative border-l-2 border-zinc-500 pl-6">
                 {updatedExperiences.map((exp, index) => (
-                    <div key={index} className="mb-8 relative">
-                        <div className="absolute -left-4 w-8 h-8 bg-zinc-700 border-2 border-white rounded-full flex items-center justify-center">
-                            <FaBuilding size={16} className="text-white" />
-                        </div>
-                        <div className="ml-6">
-                            <h2 className="text-xl font-semibold">{exp.company, exp.Role}</h2>
-                            <p className="text-zinc-400">{exp.duration}</p>
-                        </div>
+                    <div key={index} className="mb-4">
+                        <FaBuilding className="inline-block mr-2" />
+                        <span>{exp.company}:{exp.Role}</span>
+                        <span className="ml-2">({exp.duration})</span>
                     </div>
                 ))}
             </div>
