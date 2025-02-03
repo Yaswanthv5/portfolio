@@ -6,5 +6,12 @@
   .text-edge-outline {
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
-} 
+}
+
+@media (min-width: 768px) and  (max-width: 1080px) {
+  .container {
+    padding: 10px;
+    text-align:center
+  }
+}
 
