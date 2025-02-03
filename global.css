@@ -8,10 +8,11 @@
   }
 }
 
-@media (min-width: 768px) and  (max-width: 1080px) {
-  .container {
-    padding: 10px;
-    text-align:center
-  }
+
+.pl-20 {
+  padding-left: 1.2rem;
 }
 
+.pr-20 {
+  padding-left: 1.2rem;
+}
