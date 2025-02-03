@@ -38,26 +38,11 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-           As a highly motivated and results - orientated AI and
-           Data Expert with two years of hands-on experience, I
-            possess a strong foundation in automating data
-            pipelines and streamlining routine workloads, enabling
-            organizations to maximize efficiency and unlock
-            valuable insights. I am proficient in cutting-edge
-            technologies, including generative AI, machine
-            learning, and deep learning, leveraging these to
-            develop innovative and impactful solutions. My
-            expertise extends to cloud platforms such as
-            Snowflake, AWS, and GCP, allowing me to design and
-            implement robust and scalable data architectures. I am
-            adept at data engineering principles, ensuring data
-            quality and integrity throughout the entire data
-            lifecycle. Furthermore, I possess a strong
-            understanding of data science methodologies, enabling
-            me to extract meaningful insights from complex
-            datasets and build predictive models that drive
-            informed decision-making. I am committed to
-            continuous learning. 
+          Data and AI Engineer with experience in automating data pipelines, 
+          optimizing ETL processes, and implementing scalable cloud solutions. 
+          Proficient in machine learning, data engineering, and big data technologies. 
+          Hands-on expertise in cloud platforms such as GCP, AWS,Azure and Snowflake, with a strong foundation in SQL, Python, and data architecture. 
+          Skilled in designing efficient data workflows that improve system performance, reduce manual effort, and enhance data accuracy.     
         </h2>
       </div>
     </div>
