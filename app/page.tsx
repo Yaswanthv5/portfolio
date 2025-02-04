@@ -36,8 +36,8 @@ export default function Home() {
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-20 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
+      <div className="my-16 text-center animate-fade-in">
+        <h2 className="text-sm text-zinc-500 mx-auto px-7">
           Data and AI Engineer with experience in automating data pipelines, 
           optimizing ETL processes, and implementing scalable cloud solutions. 
           Proficient in machine learning, data engineering, and big data technologies. 
