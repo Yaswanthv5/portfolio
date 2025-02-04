@@ -7,16 +7,3 @@
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
 }
-
-@media (min-width: 640px){
-  .container {
-    padding: 20px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1080px){
-  .container {
-    padding: 10px;
-  }
-}
