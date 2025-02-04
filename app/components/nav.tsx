@@ -28,6 +28,12 @@ export const Navigation: React.FC = () => {
 				}`}
 			>
 				<div className="container flex items-center justify-between p-6 mx-auto">
+					<Link
+						href="/"
+						className="duration-200 text-zinc-300 hover:text-zinc-100"
+					>
+						<ArrowLeft className="w-6 h-6" />
+					</Link>
 					<div className="flex items-center gap-8">
 						<div className="hidden md:flex gap-8">
 							<Link
@@ -62,12 +68,6 @@ export const Navigation: React.FC = () => {
 							<Menu className="w-6 h-6" />
 						</button>
 					</div>
-					<Link
-						href="/"
-						className="duration-200 text-zinc-300 hover:text-zinc-100"
-					>
-						<ArrowLeft className="w-6 h-6" />
-					</Link>
 				</div>
 				{isMenuOpen && (
 					<div className="md:hidden flex flex-col items-center gap-4 p-4 bg-zinc-900 border-t border-zinc-800">

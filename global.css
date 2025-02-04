@@ -8,9 +8,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 640px){
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1080px){
   .container {
     padding: 10px;
-    text-align: center;
   }
 }
