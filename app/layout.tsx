@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yaswanthreddy.com",
     description:
-      "Data Engineer and AI Engineer",
+      "Data and AI Engineer",
     url: "https://Yaswanthreddy.com",
     siteName: "Yaswanthreddy.com",
     images: [
