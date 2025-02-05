@@ -31,7 +31,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="py-3.5 px-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text text-center">
+      <h1 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display text-center bg-clip-text whitespace-nowrap text-3xl sm:text-5xl md:text-7xl lg:text-9xl">
         Yaswanthreddy Varikuti
       </h1>
 
@@ -41,11 +41,10 @@ export default function Home() {
           Data and AI Engineer with experience in automating data pipelines, 
           optimizing ETL processes, and implementing scalable cloud solutions. 
           Proficient in machine learning, data engineering, and big data technologies. 
-          Hands-on expertise in cloud platforms such as GCP, AWS,Azure and Snowflake, with a strong foundation in SQL, Python, and data architecture. 
+          Hands-on expertise in cloud platforms such as GCP, AWS, Azure, and Snowflake, with a strong foundation in SQL, Python, and data architecture. 
           Skilled in designing efficient data workflows that improve system performance, reduce manual effort, and enhance data accuracy.     
         </h2>
       </div>
     </div>
   );
-
 }
