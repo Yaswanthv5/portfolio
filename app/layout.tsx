@@ -65,6 +65,9 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
+      <head>
+        <script src="//code.tidio.co/dv3vrck61xcumdxbdo2tpornh1dwlwnw.js" async></script>
+      </head>
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
