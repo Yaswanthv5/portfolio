@@ -7,16 +7,3 @@
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
 }
-
-.experience-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.experience-list::-webkit-scrollbar-track {
-  background: #18181b;
-}
-
-.experience-list::-webkit-scrollbar-thumb {
-  background: #eab308;
-  border-radius: 4px;
-}
