@@ -7,7 +7,7 @@ import { Card } from "../components/card";
 const skills = [
 	{
 		label: "Programming Languages",
-		handle: " Python, SQL, Java intermediate, C intermediate",
+		handle: " Python, SQL, Java (intermediate), C (intermediate)",
 	},
 	{
 		label: "Big Data Technologies",
@@ -31,7 +31,7 @@ const skills = [
     },
     {
         label: "Machine Learning & AI",
-        handle: "Neural Networks, Image Processing, Generative AI, Deep Learning, NLP, chatbots",
+        handle: "Neural Networks, Image Processing, Generative AI, Deep Learning, NLP, chatbots, Scikit-learn, TensorFlow, Keras, PyTorch",
     },
     {
         label:"DevOps & Scripting",

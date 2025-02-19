@@ -33,6 +33,9 @@ export default function Home() {
       />
       <h1 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display text-center bg-clip-text whitespace-nowrap text-3xl sm:text-5xl md:text-7xl lg:text-9xl">
         Yaswanthreddy Varikuti
+        <h2 className="text-2xl text-center text-zinc-500 mx-auto px-5">
+          Data and AI Engineer
+        </h2>
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
