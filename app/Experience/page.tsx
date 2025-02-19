@@ -67,28 +67,42 @@ export default function ExperienceTimeline() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center py-10 bg-zinc-900 text-white">
+        <div className="flex flex-col items-center py-10 bg-zinc-900 text-white px-4 overflow-x-hidden">
             <Navigation />
-            <h1 className="text-4xl font-bold mb-8 mt-16 text-center text-white-400">Experience</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-8 mt-16 text-center">Experience</h1>
             <div className="relative w-full max-w-4xl">
-                {/* Vertical Line */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
+            <div className="md:hidden absolute left-4 top-0 w-1 bg-yellow-400 h-full"></div>
+                {/* Vertical Line - Mobile: left aligned, Desktop: centered */}
+                <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-1 bg-yellow-400 h-full"></div>
 
                 {updatedExperiences.map((exp, index) => (
-                    <div key={index} className={`flex w-full mb-8 ${index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"}`}>
-                        <div className="bg-zinc-800 p-6 rounded-lg shadow-lg w-5/12 relative">
-                            <FaBuilding className="text-yellow-400 mb-2" />
-                            <h2 className="text-xl font-semibold">{exp.company}</h2>
-                            <h3 className="text-lg text-gray-300">{exp.role}</h3>
-                            <p className="text-sm text-gray-400">{exp.duration}</p>
-                            <p className="mt-2 text-sm">{exp.description}</p>
-                            <ul className="mt-2 text-sm list-disc list-inside text-gray-300">
+                    <div 
+                        key={index} 
+                        className="flex w-full mb-8 justify-start md:justify-start md:pr-20"
+                    >
+                        <div className="bg-zinc-800 p-4 md:p-6 rounded-lg shadow-lg w-full md:w-5/12 relative ml-8 md:ml-0">
+                            {/* Timeline Dot - Mobile: left aligned, Desktop: based on index */}
+                            <div className={`
+                                absolute top-6 -left-7 md:left-full md:-ml-2 
+                                w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900
+                                ${index % 2 !== 0 ? "md:hidden" : ""}
+                            `}></div>
+                            
+                            <div className="flex items-center gap-2 mb-2">
+                                <FaBuilding className="text-yellow-400 text-xl md:text-2xl" />
+                                <div>
+                                    <h2 className="text-lg md:text-xl font-semibold">{exp.company}</h2>
+                                    <h3 className="text-base md:text-lg text-gray-300">{exp.role}</h3>
+                                    <p className="text-xs md:text-sm text-gray-400">{exp.duration}</p>
+                                </div>
+                            </div>
+                            
+                            <p className="mt-2 text-xs md:text-sm">{exp.description}</p>
+                            <ul className="mt-2 text-xs md:text-sm list-disc list-inside text-gray-300 space-y-1">
                                 {exp.achievements.map((achieve, i) => (
-                                    <li key={i}>{achieve}</li>
+                                    <li key={i} className="break-words py-1">{achieve}</li>
                                 ))}
                             </ul>
-                            {/* Timeline Dot */}
-                            <div className={`absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-zinc-900 ${index % 2 === 0 ? "left-full -ml-2" : "right-full -mr-2"}`}></div>
                         </div>
                     </div>
                 ))}
