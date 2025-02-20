@@ -33,7 +33,7 @@ export default function Home() {
       />
       <h1 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display text-center bg-clip-text whitespace-nowrap text-3xl sm:text-5xl md:text-7xl lg:text-9xl">
         Yaswanthreddy Varikuti
-        <h2 className="text-3xl text-center text-white-500 mb-8 mx-auto px-5">
+        <h2 className="text-3xl text-center text-white-500 mx-auto px-5">
           AI and DATA Engineer
         </h2>
       </h1>
