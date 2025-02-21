@@ -35,7 +35,7 @@ export default function Home() {
         Yaswanthreddy Varikuti
       </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <h2 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-fade-in text-center bg-clip-text whitespace-nowrap text-3xl sm:text-5xl md:text-7xl lg:text-9xl">
+      <h2 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-fade-in text-center bg-clip-text whitespace-nowrap text-l sm:text-2xl md:text-4xl lg:text-6xl">
           AI and DATA Engineer
       </h2>
       <div className="my-8 text-center animate-fade-in">
