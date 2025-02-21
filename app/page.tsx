@@ -34,11 +34,11 @@ export default function Home() {
       <h1 className="py-3.5 px-4 z-10 text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display text-center bg-clip-text whitespace-nowrap text-3xl sm:text-5xl md:text-7xl lg:text-9xl">
         Yaswanthreddy Varikuti
       </h1>
-      <h2 className="text-3xl sm:text-l md:text-3xl lg:text-5xl text-center text-white mx-auto px-5 mt-20">
+      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="my-8 text-center animate-fade-in">
+      <h2 className="text-center text-white mx-auto px-5 mb-10 text-3xl sm:text-l md:text-3xl lg:text-5xl">
           AI and DATA Engineer
       </h2>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-center text-zinc-500 mx-auto px-5">
           Data and AI Engineer with experience in automating data pipelines, 
           optimizing ETL processes, and implementing scalable cloud solutions. 
