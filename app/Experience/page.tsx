@@ -76,10 +76,10 @@ export default function ExperienceTimeline() {
 
                 {updatedExperiences.map((exp, index) => (
                     <div key={index} className={`flex w-full mb-8 ${index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"}`}>
-                        <div className="bg-zinc-800 p-6 rounded-lg shadow-lg w-5/12 relative">
+                        <div className="bg-zinc-800 p-6 rounded-lg shadow-lg  w-full md:w-5/12 relative">
                             <FaBuilding className="text-yellow-400 mb-2" />
-                            <h2 className="text-xl font-semibold">{exp.company}</h2>
-                            <h3 className="text-lg text-gray-300">{exp.role}</h3>
+                            <h2 className="text-lg md:text-xl font-semibold">{exp.company}</h2>
+                            <h3 className="text-md md:text-lg text-gray-300">{exp.role}</h3>
                             <p className="text-sm text-gray-400">{exp.duration}</p>
                             <p className="mt-2 text-sm">{exp.description}</p>
                             <ul className="mt-2 text-sm list-disc list-inside text-gray-300">
