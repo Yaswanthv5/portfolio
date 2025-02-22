@@ -43,8 +43,8 @@ const certificates = [
     },
     {
         icon: "/Project.png",
-        label: "Project",
-        handle: "Project"
+        label: "Project Management",
+        handle: "Project Management"
     },
     {
         icon: "/sf Data eng Badge.png",
