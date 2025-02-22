@@ -7,19 +7,59 @@ import { Card } from "../components/card";
 
 const certificates = [
     {
-        icon: '/OCI24AICFA.jpg',
-        label: "OCI ( Oracle Cloud Infrastructure )",
-        handle: "OCI AI Foundation Associate",
+        icon: "/CMCW Badge.png",
+        label: "CMCW Badge",
+        handle: "CMCW Badge"
     },
     {
-        icon: '/saas.jpg',
-        label: "Informatica",
-        handle: "Informatica Intelligent Cloud Services",
+        icon: "/DA-snowflake-badge.png",
+        label: "DA-snowflake-badge",
+        handle: "DA-snowflake-badge"
     },
     {
-        icon: '/snowpro.png',
-        label: "Snowflake",
-        handle: "SnowPro Core Certification",
+        icon: "/DWM Badge.png",
+        label: "DWM Badge",
+        handle: "DWM Badge"
+    },
+    {
+        icon: "/gcp_skill_10.png",
+        label: "gcp_skill_10",
+        handle: "gcp_skill_10"
+    },
+    {
+        icon: "/gcp_skill_2.png",
+        label: "gcp_skill_2",
+        handle: "gcp_skill_2"
+    },
+    {
+        icon: "/Gen AI (1).png",
+        label: "Gen AI",
+        handle: "Gen AI"
+    },
+    {
+        icon: "/MDM_SaaS_Badge_200x200.png",
+        label: "MDM_SaaS_Badge_200x200",
+        handle: "MDM_SaaS_Badge_200x200"
+    },
+    {
+        icon: "/Project.png",
+        label: "Project",
+        handle: "Project"
+    },
+    {
+        icon: "/sf Data eng Badge.png",
+        label: "sf Data eng Badge",
+        handle: "sf Data eng Badge"
+    },
+    {
+        icon: "/SF_DATA_Lake_badge.png",
+        label: "SF_DATA_Lake_badge",
+        handle: "SF_DATA_Lake_badge"
+    },
+    {
+        icon: "/snowpro.png",
+        label: "snowpro",
+        handle: "snowpro"
     },
 ];
 
