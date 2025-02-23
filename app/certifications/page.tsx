@@ -7,34 +7,59 @@ import { Card } from "../components/card";
 
 const certificates = [
     {
-        icon: "/SnowPro.png",
-        label: "SnowPro",
+        icon: "/snowpro.png",
+        label: "SNOWPRO",
         handle: "Snowflake"
     },
     {
+        icon: "/OCI24AICFA.jpg",
+        label: "ORACLE CLOUD INFRASTRUCTURE AI CERTIFIED FOUNDATION ASSOCIATE",
+        handle: "Oracle"
+    },
+    {
+        icon: "/google-project-management-professional-certificate.2.png",
+        label: "GOOGLE PROJECT MANAGEMENT PROFESSIONAL CERTIFICATE",
+        handle: "Google and Coursera"
+    },
+    {
+        icon: "/ibm-data-engineering-professional-certificate-v3.png",
+        label: "IBM DATA ENGINEERING PROFESSIONAL CERTIFICATE V3",
+        handle: "IBM and Coursera"
+    },
+    {
         icon: "/Gen AI (1).png",
-        label: "Gen AI",
+        label: "GEN AI",
         handle: "Cognizant"
     },
     {
+        icon: "/ibm-openpages-with-watson-ai-essentials.png",
+        label: "IBM OPENPAGES WITH WATSON AI ESSENTIALS",
+        handle: "IBM"
+    },
+    {
         icon: "/MDM_SaaS_Badge_200x200.png",
-        label: "MDM SaaS",
+        label: "MDM SAAS",
         handle: "Informatica"
     },
     {
         icon: "/Project.png",
-        label: "Project Management",
+        label: "PROJECT MANAGEMENT",
         handle: "Cognizant"
     },
     {
         icon: "/CMCW Badge.png",
-        label: "CMCW Badge",
+        label: "CMCW",
         handle: "Snowflake"
     },
     {
         icon: "/DA-snowflake-badge.png",
-        label: "Data Application",
+        label: "Data Applications SNOWFLAKE",
         handle: "Snowflake"
+    },
+    {
+        icon: "/data-engineering-essentials.png",
+        label: "DATA ENGINEERING ESSENTIALS",
+        handle: "IBM (Coursera)"
     },
     {
         icon: "/DWM Badge.png",
@@ -42,23 +67,28 @@ const certificates = [
         handle: "Snowflake"
     },
     {
+        icon: "/engineer-data-for-predictive-modeling-with-bigquery.png",
+        label: "ENGINEER DATA FOR PREDICTIVE MODELING WITH BIGQUERY",
+        handle: "GCP"
+    },
+    {
         icon: "/gcp_skill_10.png",
-        label: "GCP Skill Star",
-        handle: "Google"
+        label: "GCP SKILL 10",
+        handle: "GCP"
     },
     {
         icon: "/gcp_skill_2.png",
-        label: "GCP skill Explorer",
-        handle: "Google"
+        label: "GCP SKILL 2",
+        handle: "GCP"
     },
     {
         icon: "/sf Data eng Badge.png",
-        label: "SF Data Engineering",
+        label: "SF DATA ENGINEERING",
         handle: "Snowflake"
     },
     {
         icon: "/SF_DATA_Lake_badge.png",
-        label: "SF DATA Lake",
+        label: "SF DATA LAKE",
         handle: "Snowflake"
     },
 ];
