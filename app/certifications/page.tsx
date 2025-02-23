@@ -131,7 +131,7 @@ export default function Example() {
                                     <Image
                                         src="/credly page.png"
                                         alt="Credly Profile"
-                                        width={300} height={200}
+                                        width={600} height={600}
                                         className="rounded-lg shadow-md" />
                                 </span>{" "}
                                 <div className="z-10 flex flex-col items-center">
