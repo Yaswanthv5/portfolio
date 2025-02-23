@@ -60,6 +60,12 @@ export const Navigation: React.FC = () => {
 							>
 								Certifications
 							</Link>
+							<Link
+								href="/Resume"
+								className="duration-200 text-zinc-400 hover:text-zinc-100"
+							>
+								Resume
+							</Link>
 						</div>
 						<button
 							className="md:hidden text-zinc-300 hover:text-zinc-100"
@@ -98,6 +104,13 @@ export const Navigation: React.FC = () => {
 							onClick={() => setMenuOpen(false)}
 						>
 							Certifications
+						</Link>
+						<Link
+							href="/Resume"
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+							onClick={() => setMenuOpen(false)}
+						>
+							Resume
 						</Link>
 					</div>
 				)}
