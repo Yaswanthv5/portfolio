@@ -7,8 +7,3 @@
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
 }
-
-.word-wrap {
-  overflow-wrap: break-word;
-  word-wrap: break-word; /* Legacy support */
-}
