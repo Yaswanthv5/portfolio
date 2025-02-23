@@ -7,59 +7,59 @@ import { Card } from "../components/card";
 
 const certificates = [
     {
-        icon: "/CMCW Badge.png",
-        label: "CMCW Badge",
-        handle: "CMCW Badge"
-    },
-    {
-        icon: "/DA-snowflake-badge.png",
-        label: "DA-snowflake-badge",
-        handle: "DA-snowflake-badge"
-    },
-    {
-        icon: "/DWM Badge.png",
-        label: "DWM Badge",
-        handle: "DWM Badge"
-    },
-    {
-        icon: "/gcp_skill_10.png",
-        label: "gcp_skill_10",
-        handle: "gcp_skill_10"
-    },
-    {
-        icon: "/gcp_skill_2.png",
-        label: "gcp_skill_2",
-        handle: "gcp_skill_2"
+        icon: "/SnowPro.png",
+        label: "SnowPro",
+        handle: "Snowflake"
     },
     {
         icon: "/Gen AI (1).png",
         label: "Gen AI",
-        handle: "Gen AI"
+        handle: "Cognizant"
     },
     {
         icon: "/MDM_SaaS_Badge_200x200.png",
-        label: "MDM_SaaS_Badge_200x200",
-        handle: "MDM_SaaS_Badge_200x200"
+        label: "MDM SaaS",
+        handle: "Informatica"
     },
     {
         icon: "/Project.png",
         label: "Project Management",
-        handle: "Project Management"
+        handle: "Cognizant"
+    },
+    {
+        icon: "/CMCW Badge.png",
+        label: "CMCW Badge",
+        handle: "Snowflake"
+    },
+    {
+        icon: "/DA-snowflake-badge.png",
+        label: "Data Application",
+        handle: "Snowflake"
+    },
+    {
+        icon: "/DWM Badge.png",
+        label: "Data Warehouse Management",
+        handle: "Snowflake"
+    },
+    {
+        icon: "/gcp_skill_10.png",
+        label: "GCP Skill Star",
+        handle: "Google"
+    },
+    {
+        icon: "/gcp_skill_2.png",
+        label: "GCP skill Explorer",
+        handle: "Google"
     },
     {
         icon: "/sf Data eng Badge.png",
-        label: "sf Data eng Badge",
-        handle: "sf Data eng Badge"
+        label: "SF Data Engineering",
+        handle: "Snowflake"
     },
     {
         icon: "/SF_DATA_Lake_badge.png",
-        label: "SF_DATA_Lake_badge",
-        handle: "SF_DATA_Lake_badge"
-    },
-    {
-        icon: "/snowpro.png",
-        label: "snowpro",
-        handle: "snowpro"
+        label: "SF DATA Lake",
+        handle: "Snowflake"
     },
 ];
 
@@ -86,12 +86,6 @@ export default function Example() {
                                     {s.label}
                                  </span>
                              </div>
-                             <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f0614c61-3189-4d3e-b5f8-f1308343a412" 
-                                data-share-badge-host="https://www.credly.com">
-                            </div>
-                            <script type="text/javascript" 
-                                async src="//cdn.credly.com/assets/utilities/embed.js">
-                            </script>
                         </Card>
                     ))}
                 </div>
