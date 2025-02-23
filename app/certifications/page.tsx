@@ -132,7 +132,8 @@ export default function Example() {
                                         src="/credly page.png"
                                         alt="Credly Profile"
                                         width={600} height={600}
-                                        className="rounded-lg shadow-md" />
+                                        // className="rounded-lg shadow-md" 
+                                    />
                                 </span>{" "}
                                 <div className="z-10 flex flex-col items-center">
                                     <span className="lg:text-xl font-medium duration-150 xl:text-2xl text-zinc-200 group-hover:text-white font-display">

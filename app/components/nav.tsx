@@ -43,7 +43,7 @@ export const Navigation: React.FC = () => {
 								Experience
 							</Link>
 							<Link
-								href="/contact"
+								href="/Resume"
 								className="duration-200 text-zinc-400 hover:text-zinc-100"
 							>
 								Contact
@@ -61,7 +61,7 @@ export const Navigation: React.FC = () => {
 								Certifications
 							</Link>
 							<Link
-								href="/Resume"
+								href="/contact"
 								className="duration-200 text-zinc-400 hover:text-zinc-100"
 							>
 								Resume
