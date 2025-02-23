@@ -86,13 +86,14 @@ export default function Example() {
                                     {s.label}
                                  </span>
                              </div>
+                             <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f0614c61-3189-4d3e-b5f8-f1308343a412" 
+                                data-share-badge-host="https://www.credly.com">
+                            </div>
+                            <script type="text/javascript" 
+                                async src="//cdn.credly.com/assets/utilities/embed.js">
+                            </script>
                         </Card>
                     ))}
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f0614c61-3189-4d3e-b5f8-f1308343a412" 
-                    data-share-badge-host="https://www.credly.com">
-                    </div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js">
-                    </script>
                 </div>
             </div>
         </div>
