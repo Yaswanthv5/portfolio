@@ -131,15 +131,15 @@ export default function Example() {
                                     <Image
                                         src="/credly page.png"
                                         alt="Credly Profile"
-                                        width={200} height={100}
+                                        width={300} height={200}
                                         className="rounded-lg shadow-md" />
                                 </span>{" "}
                                 <div className="z-10 flex flex-col items-center">
                                     <span className="lg:text-xl font-medium duration-150 xl:text-2xl text-zinc-200 group-hover:text-white font-display">
-                                        "Credly Profile"
+                                        Credly Profile
                                     </span>
-                                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                                        "Credly Profile"
+                                    <span className="mt-4 text-sm text-center duration-500 text-zinc-400 group-hover:text-zinc-200">
+                                        Credly Profile for more certifications
                                     </span>
                                 </div>
                             </Link>
