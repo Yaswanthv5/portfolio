@@ -2,7 +2,7 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
+import { Analytics_tsx } from "./components/analytics";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
-        <Analytics />
+        <Analytics_tsx />
       </head>
       <head>
         <script src="//code.tidio.co/dv3vrck61xcumdxbdo2tpornh1dwlwnw.js" async></script>
