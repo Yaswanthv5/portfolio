@@ -22,6 +22,11 @@ const certificates = [
         handle: "Google and Coursera"
     },
     {
+        icon: "/DATAbricks.png",
+        label: "DATA BRICKS Genrative AI Fundamentals",
+        handle: "Data Bricks"
+    },
+    {
         icon: "/ibm-data-engineering-professional-certificate-v3.png",
         label: "IBM DATA ENGINEERING PROFESSIONAL CERTIFICATE V3",
         handle: "IBM and Coursera"
