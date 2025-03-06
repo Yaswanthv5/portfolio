@@ -22,7 +22,7 @@ const certificates = [
         handle: "Google and Coursera"
     },
     {
-        icon: "/DATAbricks.png",
+        icon: "/DATAbricks AI.png",
         label: "DATA BRICKS Genrative AI Fundamentals",
         handle: "Data Bricks"
     },
